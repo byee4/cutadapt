@@ -293,7 +293,7 @@ def get_option_parser():
 	group = OptionGroup(parser, "Paired-end options", description="The "
 		"-A/-G/-B/-U options work like their -a/-b/-g/-u counterparts, but "
 		"are applied to the second read in each pair.")
-	group.add_option("-A", dest='adapters2', action='append', default=[], metavar='ADAPTER',
+	group.add_option("-A", "--ADAPTER", dest='adapters2', action='append', default=[], metavar='ADAPTER',
 		help="3' adapter to be removed from second read in a pair.")
 	group.add_option("-G", dest='front2', action='append', default=[], metavar='ADAPTER',
 		help="5' adapter to be removed from second read in a pair.")
